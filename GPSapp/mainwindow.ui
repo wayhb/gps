@@ -14,7 +14,7 @@
    <string>Тестовое приложение для расчета координат</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>0</x>
@@ -32,7 +32,11 @@
       </widget>
      </item>
      <item row="0" column="1">
-      <widget class="QLineEdit" name="enterGNSS"/>
+      <widget class="QLineEdit" name="enterGNSS">
+       <property name="text">
+        <string>$GPRMC,125504.049,A,5542.2389,N,03741.6063,E,0.06,25.82,200906,,,*17</string>
+       </property>
+      </widget>
      </item>
      <item row="1" column="0">
       <widget class="QLabel" name="label_2">
@@ -42,7 +46,11 @@
       </widget>
      </item>
      <item row="1" column="1">
-      <widget class="QLineEdit" name="azimuth"/>
+      <widget class="QLineEdit" name="azimuth">
+       <property name="text">
+        <string>180</string>
+       </property>
+      </widget>
      </item>
      <item row="2" column="0">
       <widget class="QLabel" name="label_3">
@@ -52,7 +60,11 @@
       </widget>
      </item>
      <item row="2" column="1">
-      <widget class="QLineEdit" name="distance"/>
+      <widget class="QLineEdit" name="distance">
+       <property name="text">
+        <string>76</string>
+       </property>
+      </widget>
      </item>
      <item row="3" column="0">
       <widget class="QLabel" name="label_4">
@@ -62,7 +74,11 @@
       </widget>
      </item>
      <item row="3" column="1">
-      <widget class="QLineEdit" name="outputGNSS"/>
+      <widget class="QLineEdit" name="outputGNSS">
+       <property name="text">
+        <string>$GPRMC,125504.049,A,5542.2389,N,03741.6063,E,0.06,25.82,200906,,,*17</string>
+       </property>
+      </widget>
      </item>
      <item row="4" column="0" colspan="2">
       <widget class="QPushButton" name="generate">
